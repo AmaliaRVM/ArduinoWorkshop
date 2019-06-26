@@ -5,10 +5,11 @@ body{
 .grid-container{
     display: grid;
     margin:auto;
+    width: 80vw;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     grid-template-rows: auto auto auto auto;
     grid-gap:1rem;
-    grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . .";
+    /* grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . ."; */
     font-family: 'B612 Mono', monospace;
 }
 
@@ -19,7 +20,6 @@ body{
     background-color: rgb(201, 14, 101);
     grid-column: 1/3;
     margin-top:20px;
-    margin-left: 20px;
     height: 200px;
 }
 p{
@@ -76,12 +76,24 @@ p{
 
 /* introText */
 .intro{
-    border: solid black;
-    margin-top: 20px;
-    margin-left: 20px;
-    grid-column: 3/5;
+    text-align: inherit;
+    grid-column: 3/4;
 }
 .introText{
     font-family: 'B612 Mono', monospace;
     font-size: 20px;
+}
+/* Links style */
+.links{
+    margin-top: 20px;
+    margin-left: 5%;
+    grid-column: 4/5;
+    text-align: end;
+}
+.linkText{
+    font-size: 15px;
+}
+a{
+    color: #158c77;
+    text-decoration: none;
 }
