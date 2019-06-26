@@ -80,7 +80,6 @@ p{
     grid-column: 3/4;
 }
 .introText{
-    font-family: 'B612 Mono', monospace;
     font-size: 20px;
 }
 /* Links style */
@@ -90,6 +89,20 @@ p{
     grid-column: 4/5;
     text-align: end;
 }
+.linksTwo{
+    margin-top: 20px;
+    margin-left: 5%;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: end;
+}
+.linksThree{
+    margin-top: 80px;
+    margin-left: 5%;
+    grid-column: 4/5;
+    grid-row: 4;
+    text-align: end;
+}
 .linkText{
     font-size: 15px;
 }
@@ -97,3 +110,38 @@ a{
     color: #158c77;
     text-decoration: none;
 }
+/* Exercice style */
+h5{
+    color: rgb(201, 14, 101);
+}
+ul{
+    list-style-type: none;
+    text-align: end;
+    line-height: 30px;
+}
+.ledExercice{
+    grid-column: 1;
+    grid-row: 4;
+    text-align: end;
+}
+.spaceShip{
+    grid-column: 2;
+    grid-row: 4;
+    text-align: end;
+}
+.Banana{
+    grid-column: 3/4;
+    grid-row: 4;
+    text-align: end;
+    text-size-adjust: auto;
+    margin-left: 20px;
+    
+}
+.bananaText{
+    font-size: 15px;
+}
+#pink{
+    color:rgb(201, 14, 101);
+}
+
+
