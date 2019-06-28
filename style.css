@@ -78,9 +78,11 @@ p{
 .intro{
     text-align: inherit;
     grid-column: 3/4;
+    width: 400px;
 }
 .introText{
-    font-size: 20px;
+    font-size: 15px;
+    margin-top:20px;
 }
 /* Links style */
 .links{
