@@ -147,28 +147,25 @@ ul{
 }
 /* first button */
 /*the modal (background) */
-.modal {
+ .modal {
     display: none;
     position: fixed;
-    z-index: -1;
-    padding-top: 100px;
-    left:50%;
-    top:60%;
-    right: 80%;
-    width: 100%;
-    height: 60%;
-    background-color: #158c77;
-    opacity:0.4;
-    /* opacity: 0.4; */
-}
+    z-index: 1;
+    left:0;
+    top:0;
+    width: 30%;
+    height: 30%;
+    /* background-color: #158c77;
+     opacity: 0.4; */
+} 
+
 /* Modal Content/box */
 .modal-content {
     background-color: aqua;
     margin: 15% auto;
     padding: 20px;
     border:1px solid #888;
-    width: 100%;
-    z-index: 2;
+    width: 80%;
 }
 
 /* The Close Button */
@@ -194,8 +191,8 @@ ul{
     top:0;
     width: 30%;
     height: 30%;
-    background-color: #158c77;
-    opacity: 0.4;
+    /* background-color: #158c77;
+    opacity: 0.4;*/
 }
 /* Modal Content/box */
 .modal1-content {
@@ -204,6 +201,8 @@ ul{
     padding: 20px;
     border:1px solid #888;
     width: 80%;
+    position: relative;
+    margin-left: 380px;
 }
 
 /* The Close Button */
@@ -230,8 +229,8 @@ ul{
     top:0;
     width: 30%;
     height: 30%;
-    background-color: #158c77;
-    opacity: 0.4;
+    /* background-color: #158c77;
+    opacity: 0.4;*/
 }
 /* Modal Content/box */
 .modal2-content {
@@ -240,6 +239,8 @@ ul{
     padding: 20px;
     border:1px solid #888;
     width: 80%;
+    position: relative;
+    margin-left: 760px;
 }
 
 /* The Close Button */
@@ -265,4 +266,5 @@ ul{
     margin-left: 30%;
     margin-top: 20px;
     margin-bottom: 20px;
+    z-index: -1;
 }
