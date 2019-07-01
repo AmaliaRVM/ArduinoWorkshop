@@ -13,6 +13,13 @@ body{
     font-family: 'B612 Mono', monospace;
 }
 
+@media only screen and (max-width: 1000px){
+    .grid-container{
+        display: block;
+    }
+}
+
+
 /*arduinoLove container style*/
 .arduinoLove{
     display: flex;
