@@ -6,16 +6,27 @@ body{
     display: grid;
     margin:auto;
     width: 80vw;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     grid-template-rows: auto auto auto auto;
     grid-gap:1rem;
     /* grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . ."; */
     font-family: 'B612 Mono', monospace;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1000px){
     .grid-container{
         display: block;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .links{
+        grid-row: 3;
+    }
+    .linksTwo{
+        grid-row: 4;
+    }
+    .linksThree{
+        grid-row: 5;
     }
 }
 
@@ -85,7 +96,7 @@ p{
 .intro{
     text-align: inherit;
     grid-column: 3/4;
-    width: 350px;
+    width: 450px;
     
 }
 .introText{
@@ -96,20 +107,20 @@ p{
 .links{
     margin-top: 20px;
     margin-left: 5%;
-    grid-column: 4/5;
+    grid-column: 5;
     text-align: end;
 }
 .linksTwo{
     margin-top: 20px;
     margin-left: 5%;
-    grid-column: 4/5;
+    grid-column: 5;
     grid-row: 2/3;
     text-align: end;
 }
 .linksThree{
     margin-top: 80px;
     margin-left: 5%;
-    grid-column: 4/5;
+    grid-column: 5;
     grid-row: 4;
     text-align: end;
 }
@@ -145,7 +156,6 @@ ul{
     text-align: end;
     text-size-adjust: auto;
     margin-left: 20px;
-    
 }
 .bananaText{
     font-size: 15px;
@@ -153,9 +163,15 @@ ul{
 #pink{
     color:rgb(201, 14, 101);
 }
+
+/* Buttons style */
+.ArduinoComponents{
+    grid-column: 1;
+    grid-row: 2;
+}
 /* first button */
 /*the modal (background) */
- .modal {
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -178,16 +194,21 @@ ul{
 
 /* The Close Button */
 .close {
-   color:black;
-   float: right;
-   font-size: 12px;
-   font-weight: bold;
+    color:black;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
 }
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer; 
+}
+
+.Circuits{
+    grid-column: 2;
+    grid-row: 2;
 }
 /* second modal*/
 /*the modal (background) */
@@ -215,10 +236,10 @@ ul{
 
 /* The Close Button */
 .close1 {
-   color: #6c4683;
-   float: right;
-   font-size: 12px;
-   font-weight: bold;
+    color: #6c4683;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
 }
 .close1:hover,
 .close1:focus {
@@ -227,6 +248,10 @@ ul{
     cursor: pointer; 
 }
 
+.code2{
+    grid-column: 3;
+    grid-row: 2;
+}
 /* third button */
 /*the modal (background) */
 .modal2 {
@@ -253,10 +278,10 @@ ul{
 
 /* The Close Button */
 .close2 {
-   color: #6c4683;
-   float: right;
-   font-size: 12px;
-   font-weight: bold;
+    color: #6c4683;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
 }
 .close2:hover,
 .close2:focus {
@@ -269,10 +294,11 @@ ul{
     width: 70%;
     font-size: 16px;
     background-color: #158c77;
-    display: flex;
     justify-content: center;
     margin-left: 30%;
     margin-top: 20px;
     margin-bottom: 20px;
     z-index: -1;
+    color: white;
+    font-family: 'B612 Mono', monospace;
 }
