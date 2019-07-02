@@ -85,7 +85,8 @@ p{
 .intro{
     text-align: inherit;
     grid-column: 3/4;
-    width: 400px;
+    width: 350px;
+    
 }
 .introText{
     font-size: 15px;
