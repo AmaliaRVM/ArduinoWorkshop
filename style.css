@@ -13,23 +13,14 @@ body{
     font-family: 'B612 Mono', monospace;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
     .grid-container{
         display: block;
     }
-}
-@media only screen and (max-width: 1200px){
-    .links{
-        grid-row: 3;
-    }
-    .linksTwo{
-        grid-row: 4;
-    }
     .linksThree{
-        grid-row: 5;
+        margin: 0;
     }
 }
-
 
 /*arduinoLove container style*/
 .arduinoLove{
@@ -114,14 +105,14 @@ p{
     margin-top: 20px;
     margin-left: 5%;
     grid-column: 5;
-    grid-row: 2/3;
+    grid-row: 2;
     text-align: end;
 }
 .linksThree{
     margin-top: 80px;
     margin-left: 5%;
     grid-column: 5;
-    grid-row: 4;
+    grid-row: 3;
     text-align: end;
 }
 .linkText{
@@ -142,17 +133,17 @@ ul{
 }
 .ledExercice{
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 3;
     text-align: end;
 }
 .spaceShip{
     grid-column: 2;
-    grid-row: 4;
+    grid-row: 3;
     text-align: end;
 }
 .Banana{
     grid-column: 3/4;
-    grid-row: 4;
+    grid-row: 3;
     text-align: end;
     text-size-adjust: auto;
     margin-left: 20px;
